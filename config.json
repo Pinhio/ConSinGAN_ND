@@ -1,0 +1,32 @@
+{
+    "data_dir": "data",
+    "out_dir": "out",
+
+    "dimension": 3,
+
+    "epochs": 2000,
+    "num_scales": 8,
+    "active_scales": 3,
+    "num_layers": 3,
+
+    "cbam": true,
+    "num_feature_channels": 64,
+    "kernel_size": 3,
+    "padding": 1,
+    "lrelu_alpha": 0.05,
+    "beta1_adam": 0.5,
+    "lr": 0.0005,
+    "lr_factor": 0.1,
+    "gamma_scheduler": 0.1,
+    "noise_amp": 0.1,
+    "alpha_rec_loss": 10,
+    "lambda_grad_penalty": 0.1,
+
+    "Dsteps": 3,
+    "Gsteps": 3,
+
+    "max_size": 250,
+    "min_size": 25,
+
+    "batch_norm": true
+}
