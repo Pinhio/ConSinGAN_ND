@@ -1,5 +1,7 @@
 # ConSinGAN_ND
 
+**Note:** This project is an independent result of my masters thesis on 3D medical image data augmentation, which is still in work. Thus, it is not yet conveniently runnable with command line parameters but will be further updated. 
+
 ConSinGAN implementation for 2D and 3D images.
 
 It is primarily inspired by two papers:
@@ -13,8 +15,6 @@ This project includes the model and trining pipeline for a n-dimensional ConSinG
 SinGan (Single Image Generative Adversarial Network) is a one-shot GAN architecture. This means, that only one single image is used for training. For details on the achitecture, please refer to the inline documentation as well as the abovementiones papers.
 
 ## Training of a model
-
-**Note:** This project is an intermediate state of my masters thesis and is not yet conveniently runnable with command line parameters.
 
 An example image is given in the `/data` directory. For execution of the training with the example image, just run `main.py`. If you wish to use your own image, you may add it to the `/data` directory and change the file name in `main.py`. Note that this network is a single image GAN and thus is only trained with a single image. It is also worth noting that the use of CUDA is highly recommended and that 3D computation takes considerably more time than 2D computation (but also yields better results).
 
