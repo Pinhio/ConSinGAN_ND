@@ -10,13 +10,15 @@ The used attention mechanism was introduced by [Woo et al. 2018](https://link.sp
 
 This project includes the model and trining pipeline for a n-dimensional ConSinGAN with an additional attention mechanism. 2D and 3D images can be used as input.
 
-SinGan (Single Image Generative Adversarial Network) is a one-shot GAN architecture. This means, that only one single image is used for training. For implementation details, please refer to the inline documentation as well as the abovementiones papers.
+SinGan (Single Image Generative Adversarial Network) is a one-shot GAN architecture. This means, that only one single image is used for training. For details on the achitecture, please refer to the inline documentation as well as the abovementiones papers.
 
 ## Running the project
 
-*Note:* This project is an intermediate state of my masters thesis and is not yet conveniently runnable with command line parameters.
+**Note:** This project is an intermediate state of my masters thesis and is not yet conveniently runnable with command line parameters.
 
 An example image is given in the `/data` directory. For execution of the training with the example image, just run `main.py`. If you wish to use your own image, you may add it to the `/data` directory and change the file name in `main.py`. Note that this network is a single image GAN and thus is only trained with a single image. It is also worth noting that the use of CUDA is highly recommended and that 3D computation takes considerably more time than 2D computation (but also yields better results).
+
+The trained networks of each scale will be saved in the `/out` directory. In addition, every 500 epochs one fake sample and one reconstruction image are saved.
 
 ## Configuration
 
