@@ -12,7 +12,7 @@ This project includes the model and trining pipeline for a n-dimensional ConSinG
 
 SinGan (Single Image Generative Adversarial Network) is a one-shot GAN architecture. This means, that only one single image is used for training. For details on the achitecture, please refer to the inline documentation as well as the abovementiones papers.
 
-## Running the project
+## Training of a model
 
 **Note:** This project is an intermediate state of my masters thesis and is not yet conveniently runnable with command line parameters.
 
