@@ -78,8 +78,7 @@ def train(img:np.ndarray, config:Config) -> None:
                                             batch_norm=config.batch_norm,
                                             cbam=config.cbam).to(device)
         
-        # init new stage of G and (whyever) load params of D from last stage
-        # wird das einen Error werfen? Ich denke ja
+        # init new stage of G and load params of D from last stage
         if curr_scale > 0:
             generator.init_next_scale()
             discriminator.load_state_dict(torch.load(f'{config.save_dir}/{curr_scale-1}/netD.pth'))
